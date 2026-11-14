@@ -1,0 +1,80 @@
+{
+  "name": "Ecmel · 00 Yeni soru",
+  "active": false,
+  "nodes": [
+    {
+      "id": "6915c220-0928-539d-9a28-87afb0e57c11",
+      "name": "Ecmel’in Merak Kutusu · Yeni soru",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "formTitle": "Ecmel’in Merak Kutusu · Yeni soru",
+        "formDescription": "Bir soru yaz. Kaynaklı senaryo n8n Executions ekranında ve bölüm klasöründe hazır olur. Taslağı gördükten sonra Bölüm üret formunda aynı kodu kullan.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Bölüm kodu",
+              "fieldType": "text",
+              "requiredField": true,
+              "placeholder": "kuslarin-kulaklari"
+            },
+            {
+              "fieldLabel": "Çocuğun sorusu",
+              "fieldType": "textarea",
+              "requiredField": true,
+              "placeholder": "Kuşların kulakları nerede, nasıl duyuyorlar?"
+            },
+            {
+              "fieldLabel": "Sahne fikri",
+              "fieldType": "text",
+              "requiredField": false,
+              "placeholder": "Çadırın önünde erken kamp sabahı"
+            }
+          ]
+        },
+        "responseMode": "onReceived",
+        "options": {
+          "path": "ecmel-soru",
+          "buttonLabel": "Senaryoyu hazırla",
+          "appendAttribution": false
+        }
+      },
+      "webhookId": "f30007c3-c335-54f2-8ce9-8ca90883d61c"
+    },
+    {
+      "id": "2324d3ac-097e-5d4c-abc7-96c6dbc2bfe3",
+      "name": "Kaynaklı Türkçe senaryo yaz",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        250,
+        0
+      ],
+      "parameters": {
+        "command": "={{ \"python3 ./pipeline.py draft --form \" + JSON.stringify({episode:$json[\"Bölüm kodu\"], question:$json[\"Çocuğun sorusu\"], setting:$json[\"Sahne fikri\"] ?? \"\"}).base64Encode() }}",
+        "executeOnce": true
+      }
+    }
+  ],
+  "connections": {
+    "Ecmel’in Merak Kutusu · Yeni soru": {
+      "main": [
+        [
+          {
+            "node": "Kaynaklı Türkçe senaryo yaz",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "executionTimeout": 3600
+  }
+}

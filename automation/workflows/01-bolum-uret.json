@@ -1,0 +1,112 @@
+{
+  "name": "Ecmel · 01 Bölüm üret",
+  "active": false,
+  "nodes": [
+    {
+      "id": "763e1f62-0b93-5d07-9704-7b2b8f52cce6",
+      "name": "Ecmel’in Merak Kutusu · Bölüm üret",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "formTitle": "Ecmel’in Merak Kutusu · Bölüm üret",
+        "formDescription": "Kelebek bölümü için kelebekler yaz ve senaryo alanını boş bırak. Yeni bir bölüm için benzersiz kod ve kaynaklı senaryo JSON’u gir. Plan modu kredi harcamaz.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Bölüm kodu",
+              "fieldType": "text",
+              "requiredField": true,
+              "placeholder": "kelebekler"
+            },
+            {
+              "fieldLabel": "Model profili",
+              "fieldType": "dropdown",
+              "requiredField": true,
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "kling"
+                  },
+                  {
+                    "option": "karma"
+                  },
+                  {
+                    "option": "ekonomik"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Çalışma modu",
+              "fieldType": "dropdown",
+              "requiredField": true,
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "plan"
+                  },
+                  {
+                    "option": "uret"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "En fazla kredi",
+              "fieldType": "number",
+              "requiredField": true,
+              "placeholder": "4800"
+            },
+            {
+              "fieldLabel": "Senaryo JSON",
+              "fieldType": "textarea",
+              "requiredField": false
+            }
+          ]
+        },
+        "responseMode": "onReceived",
+        "options": {
+          "path": "ecmel-bolum",
+          "buttonLabel": "Bölümü işle",
+          "appendAttribution": false
+        }
+      },
+      "webhookId": "14fc33a3-6884-563f-bb2b-3c92e75456d5"
+    },
+    {
+      "id": "2cc452ee-0f83-56a9-a519-b1992f3b4878",
+      "name": "Kredi hesabı ve Magic Hour üretimi",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        260,
+        0
+      ],
+      "parameters": {
+        "command": "={{ \"python3 ./pipeline.py episode --form \" + JSON.stringify({episode:$json[\"Bölüm kodu\"], profile:$json[\"Model profili\"], mode:$json[\"Çalışma modu\"], budget:$json[\"En fazla kredi\"], manifest:$json[\"Senaryo JSON\"] ?? \"\"}).base64Encode() }}",
+        "executeOnce": true
+      }
+    }
+  ],
+  "connections": {
+    "Ecmel’in Merak Kutusu · Bölüm üret": {
+      "main": [
+        [
+          {
+            "node": "Kredi hesabı ve Magic Hour üretimi",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "executionTimeout": 3600
+  }
+}

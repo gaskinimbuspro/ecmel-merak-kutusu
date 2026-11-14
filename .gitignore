@@ -1,0 +1,4 @@
+.DS_Store
+/.env*
+/*.mp4
+/automation/assets/

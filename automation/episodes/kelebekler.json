@@ -1,0 +1,26 @@
+{
+  "title": "Kelebekler nasıl uçar?",
+  "description": "Bahçede bir kelebeğin dört kanadını sayıyoruz. Sonra kanatlarının onu nasıl havada tuttuğuna ve kalkarken ileri gitmesine nasıl yardım ettiğine bakıyoruz.",
+  "sources": [
+    "https://www.floridamuseum.ufl.edu/wp-content/uploads/sites/16/2017/02/Butterfly-Educators-Guide.pdf",
+    "https://www.lunduniversity.lu.se/article/butterfly-wing-clap-explains-mystery-flight"
+  ],
+  "references": {
+    "kiz": "~/Downloads/magichour_ai_image_editor-2026-11-14-608x608-cmwgbvmwy09f6m901ygevj3b2.png",
+    "baba": "~/Downloads/magichour_ai_image_editor-2026-11-14-608x608-cmwgc04850dnonu01zjpy4jhr.png"
+  },
+  "scenes": [
+    {
+      "seconds": 25,
+      "file": "~/Downloads/magichour_text_to_video-2026-11-14-720x1280-cmwgcf4w80chklu0147vckna8.mp4"
+    },
+    {
+      "seconds": 30,
+      "prompt": "Sıcak bir 2D anime aile bilim dizisinin bahçe sahnesi. @kiz iki topuzlu, sarı sweatshirt ve turkuaz yaprak rozetli kız. @baba kırlaşmış şakaklı, lacivert sweatshirt ve pusula rozetli baba. Yüzler ve kıyafetler planlar arasında tutarlı kalsın. Çizgi ve gölgeler baba portresindeki anime stilinde olsun.\n0–7 sn: Sarı papatya yakın planda. Siyah beyaz kelebek uzaklaşır ve başka bir kelebek, mavi kanatlı olan, papatyaya konar. Kız heyecanla babasına döner: \"Bak baba, bir tane de mavi geldi! Bu nasıl havada kalıyor?\"\n7–21 sn: Baba kızın hizasında yanıt verir. Konuşurken kısa süre kelebeğin kalkışına geç. Kelebeği yandan göster. Her yanında bir ön ve bir arka kanat var, kanatlar doğal biçimde örtüşebilir. Baba: \"Kanatlarını aşağı çırpınca havayı aşağı iter. Hava da kanatları yukarı iter. Böylece kelebek havada kalabilir.\"\n21–30 sn: Aileyi tekrar göster. Kız kelebeğin ilerlediğini izler ve sorar: \"Peki, havada kalınca ileriye nasıl gidiyor?\" Bir an bekle.\nSes: Replikleri doğal Türkiye Türkçesiyle aynen seslendir. Yalnızca konuşan kişinin dudakları hareket etsin, ağız hareketi replikle uyumlu olsun. Replikleri değiştirme, çevirme veya yeni söz ekleme. Çok hafif bahçe sesi. Fon müziği ve ekran yazısı olmasın."
+    },
+    {
+      "seconds": 30,
+      "prompt": "Sıcak bir 2D anime aile bilim dizisinin bahçe sahnesi. @kiz iki topuzlu, sarı sweatshirt ve turkuaz yaprak rozetli kız. @baba kırlaşmış şakaklı, lacivert sweatshirt ve pusula rozetli baba. Yüzler ve kıyafetler planlar arasında tutarlı kalsın. Çizgi ve gölgeler baba portresindeki anime stilinde olsun.\n0–7 sn: Baba bahçede kızına döner. Baba: \"Bilim insanları bir kelebek türünün çiçekten nasıl kalktığına bakmış.\"\n7–20 sn: Farklı bir kelebek türünün kalkışını canlandır. Turuncu, siyah benekli Argynnis paphia yandan görünür. Bir çiçekten kalkarken kanatlarını başının arkasında, gövdesinin üstünde birbirine yaklaştırır ve hafifçe büker. Hava geriye giderken kelebek ileri hareket eder. Kanatlarını dört tane çiz, hava görünmez. Baba görüntünün üzerinde konuşur: \"Kanatları yukarıda birbirine yaklaşınca aradaki hava geriye çıkmış. Bu da kelebeği ileri itmiş.\"\n20–30 sn: Kıza dön. Kız gözleriyle kelebeği izleyip gülümser. Kız: \"Bir daha kelebek görürsem, çiçekten nasıl kalktığına bakacağım!\" Son birkaç saniye aile aynı bahçede birlikte kelebeği izler.\nSes: Replikleri doğal Türkiye Türkçesiyle aynen seslendir. Yalnızca konuşan kişinin dudakları hareket etsin. Replikleri değiştirme, çevirme veya yeni söz ekleme. Çok hafif bahçe sesi. Fon müziği ve ekran yazısı olmasın."
+    }
+  ]
+}

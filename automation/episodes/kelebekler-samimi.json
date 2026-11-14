@@ -1,0 +1,28 @@
+{
+  "title": "Kelebekler nasıl uçar?",
+  "description": "Bahçede bir kelebeğin dört kanadını sayıyoruz. Sonra kanatlarının onu nasıl havada tuttuğuna ve kalkarken ileri gitmesine nasıl yardım ettiğine bakıyoruz.",
+  "sources": [
+    "https://www.floridamuseum.ufl.edu/wp-content/uploads/sites/16/2017/02/Butterfly-Educators-Guide.pdf",
+    "https://www.lunduniversity.lu.se/article/butterfly-wing-clap-explains-mystery-flight"
+  ],
+  "references": {
+    "kiz": "~/Downloads/magichour_ai_image_editor-2026-11-14-608x608-cmwgbvmwy09f6m901ygevj3b2.png",
+    "baba": "~/Downloads/magichour_ai_image_editor-2026-11-14-608x608-cmwgc04850dnonu01zjpy4jhr.png",
+    "mavi": "assets/kelebek-mavi-anime.png",
+    "turuncu": "assets/kelebek-turuncu-anime.png"
+  },
+  "scenes": [
+    {
+      "seconds": 25,
+      "file": "~/Downloads/magichour_text_to_video-2026-11-14-720x1280-cmwgcf4w80chklu0147vckna8.mp4"
+    },
+    {
+      "seconds": 15,
+      "prompt": "Aynı güneşli bahçede geçen hareketli 2D anime. @kiz iki topuzlu, sarı sweatshirt ve yaprak rozetli kız. @baba kırlaşmış şakaklı, lacivert sweatshirt ve pusula rozetli baba. Kamera yumuşak hareket eder, aile birbirine bakar. Gün ışığı, ayrıntılı suluboya yeşillik, doğala yakın doygun renkler. Yalnızca tırnak içindeki kısa replikleri doğal Türkiye Türkçesiyle söyle. Canlı ve sıcak konuşma. Yalnızca konuşan kişi dudaklarını hareket ettirir. Fon müziği ve yazı yok.\n0–5 sn. Kız babasının koluna hafifçe dokunur. Gözleri parlar ve sarı papatyaya konmak üzere olan mavi kelebeği gösterir. Kız alçak, heyecanlı sesle “Babacım, bak! Bu mavi olan nasıl havada kalıyor?” der. Baba kızın hizasına eğilir ve ona gülümser. Baba “Bak canım kızım.” der.\n5–15 sn. Bu cümleden hemen sonra @mavi referansındaki kelebek gerçekçi bahçe makro planında. Sarı papatyayla birlikte tek sürekli yakın çekim. Kelebek çiçekten kalkar. Baba kamera dışından “Kanatlarını aşağı çırpınca havayı aşağı iter. Hava da onu yukarı iter.” der. Tam “aşağı çırpınca” kelimelerinde kanatların belirgin aşağı vuruşunu, “yukarı iter” dediği anda kelebeğin yerden yükselişini göster. Kanatları doğal eklemlerinden hareket eder. İki ön ve iki arka kanadı, belirgin damar dokusunu ve mavi pulları referansa uygun çiz. Birkaç toz tanesi ışıkta süzülür. Son saniyede kelebek ilerlerken kamera onu izler."
+    },
+    {
+      "seconds": 20,
+      "prompt": "Aynı güneşli bahçede geçen hareketli 2D anime. @kiz iki topuzlu, sarı sweatshirt ve yaprak rozetli kız. @baba kırlaşmış şakaklı, lacivert sweatshirt ve pusula rozetli baba. Kamera yumuşak hareket eder, aile birbirine bakar. Gün ışığı, ayrıntılı suluboya yeşillik, doğala yakın doygun renkler. Yalnızca tırnak içindeki kısa replikleri doğal Türkiye Türkçesiyle söyle. Canlı ve sıcak konuşma. Yalnızca konuşan kişi dudaklarını hareket ettirir. Fon müziği ve yazı yok.\n0–4 sn. Kız başını merakla yana eğer, gözleri kelebeğin peşindedir. Babasına döner. Kız “Peki, ileriye nasıl gidiyor?” der. Baba kızına gülümser, sonra eliyle çiçeği işaret eder. Baba “Şu turuncu olana bak.” der.\n4–15 sn. @turuncu referansındaki farklı kelebek, siyah benekli turuncu Argynnis paphia, yandan yakın ve yavaş çekimde. Baba kamera dışından “Bu tür kalkarken kanatlarını üstte birbirine yaklaştırır. Aradaki hava geriye gider. Kelebek de ileri gider.” der. Özellikle “üstte birbirine yaklaştırır” sözünde kamera kelebeğin üstünde birleşmeye yaklaşan esnek kanatlarını açıkça görür. “İleri gider” sözünde kelebek bakış yönünde çiçekten ileri doğru uzaklaşır ve kamera onu izler. Sade kesintisiz, gözlem yapılacak kadar uzun plan. Referanstaki benekler, iki ön ve iki arka kanat, ince antenler ve doğal hareket.\n15–20 sn. Baba ve kız aynı kadrajda uçan kelebeğin peşinden gözleriyle bakar. Kız keşfetmiş gibi kıkırdar. Kız “Baba, gördüm! Bir daha da bakacağım.” der. Baba kızına dönüp içtenlikle gülümser. Bir an birlikte sessizce kelebeği izlerler."
+    }
+  ]
+}

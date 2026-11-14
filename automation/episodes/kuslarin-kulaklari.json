@@ -1,0 +1,31 @@
+{
+  "title": "Kuşların Kulakları Nerede? | Ecmel’in Merak Kutusu",
+  "description": "Kamp sabahında Ecmel’in duyduğu bir ötüş, görünmeyen kulakların peşine düşmesine yol açıyor. Bir kızılgerdanın üzerinden kuşların kulak açıklıklarını ve sesin kulak zarını nasıl titreştirdiğini keşfediyoruz.",
+  "sources": [
+    "https://www.birdnote.org/podcasts/birdnote-daily/birds-have-no-external-ears",
+    "https://pubmed.ncbi.nlm.nih.gov/32828615/",
+    "https://www.allaboutbirds.org/guide/European_Robin/id"
+  ],
+  "references": {
+    "kiz": "assets/magichour-karakterler/ecmel-video.png",
+    "baba": "assets/magichour-karakterler/gokhan-siyah-mont.png",
+    "anne": "assets/magichour-karakterler/beyza-kamp.png"
+  },
+  "scenes": [
+    {
+      "seconds": 18,
+      "kind": "diyalog",
+      "prompt": "Dikey 9:16, sıcak ve elle boyanmış 2D anime. Çamların arasında kamp sabahı. Pas turuncusu kubbe çadır, koyu yeşil çamlar, hafif esinti ve yumuşak gün ışığı. @kiz Ecmel iki topuzlu, koyu iri gözlü, yeşil yaprak rozetli sarı kazaklı. @baba Gökhan kırçıl şakaklı, hafif sakallı ve siyah kapitone montlu. Yüzleri referanslara sadık çiz. Doğal Türkiye Türkçesi. Yalnızca tırnak içindeki sözleri bir kez söyle. Replikler arasında dinleme boşluğu. Yalnızca konuşan kişi dudaklarını hareket ettirir. Yazı, altyazı, logo ve fon müziği yok.\n0–4 sn. Çadır kapısı açılır. Yakın bir daldan tek kısa kızılgerdan ötüşü gelir. Kamera kuşu yerinde gösterir: turuncu yüz ve göğüslü, zeytin kahverengi sırtlı, küçük tombul bir kızılgerdan. Ecmel gözlerini açıp fısıldar. “Babacım, duydun mu?”\n4–12 sn. Baba Ecmel’in hizasına eğilir. İkisi dalda duran kuşa bakar. Ecmel önce kuşun, sonra babasının başına bakıp kendi kulağına dokunur. “Onun kulağı nerede? Hiç göremiyorum.”\n12–18 sn. Gökhan’ın gözleri gülümserken hafifçe kısılır. Ecmel’i duymak için biraz yaklaşır. “Gel, yakından bakalım.” Kamera kuşun yandan görülen başına geçerken ötüşe kısa bir boşluk bırak."
+    },
+    {
+      "seconds": 25,
+      "kind": "diyalog",
+      "prompt": "Dikey 9:16, elle boyanmış 2D anime. Çam kampı, pas turuncusu çadır, yumuşak sabah ışığı. @kiz Ecmel yeşil yaprak rozetli sarı kazak ve iki topuz. @baba Gökhan siyah kapitone mont ve kırçıl şakaklar. Aynı küçük kızılgerdan, turuncu yüz ve göğüs, zeytin kahverengi sırt, ince koyu gaga. Doğal Türkiye Türkçesi, sakin ve yakın baba sesi. Tırnak içindeki sözleri sırayla bir kez söyle. Dış ses Gökhan’ın kendi sesi. Yazı, altyazı, logo ve fon müziği yok.\n0–9 sn. Kuşun başı yandan yakın planda. Gökhan kadraj dışında “Kulakları var. Gözünün biraz arkasına ve aşağısına bak. Orada tüylerin örttüğü küçük bir açıklık var.” der. Kamera tam replikte gözün arkasındaki ve hafifçe altındaki tüyleri gösterir. Kuşun doğal başında delik çizme. Ardından aynı başın şematik yan görünümüne yumuşak geçiş yap, o noktadaki ince tüy katmanını saydamlaştır ve tüylerin altındaki küçük açıklığı göster.\n9–19 sn. Basit şematik kesitte kulak açıklığı, kısa kanal ve kanalın sonunda ince kulak zarı göster. Gökhan “Ses bu açıklıktan içeri giriyor. İçerideki ince kulak zarı titriyor.” der. “Titriyor” sözcüğünde sadece zar hafifçe titreşir. Sesin hareketini çok ince yarı saydam dalgalarla ve yalnız şemada göster.\n19–25 sn. Kamera şemadan gerçek anime kuşuna ve Ecmel’e döner. Ecmel hafif şaşkın bir gülümsemeyle “Aa, tüylerin altında!” der. Baba onaylayarak başını sallar. Bir an birlikte dinlerler."
+    },
+    {
+      "seconds": 17,
+      "kind": "diyalog",
+      "prompt": "Dikey 9:16, sıcak elle boyanmış 2D anime. Aynı çam kampı, pas turuncusu kubbe çadır, aynı gün ışığı ve dal. @kiz Ecmel iki topuz ve yeşil yaprak rozetli sarı kazak. @baba Gökhan kısa kırçıl saçlı ve siyah kapitone montlu. @anne Beyza iri gözlü, dolgun yanaklı, desenli eşarbı saçını, kulaklarını ve boynunu örten haki montlu anne. Görsel referanslara sadık kal. Karakterler Türkiye Türkçesi konuşur. Tırnak içindeki replikleri birer kez, doğal duraklarla ve konuşmacı değişiminde sesleri karıştırmadan söyle. Yazı, altyazı, logo ve fon müziği yok.\n0–6 sn. Beyza çadırın yanından gelir, Ecmel’in yanına diz çöker ve sıcakça “Ne dinliyorsunuz öyle?” der. Ecmel kuşu ürkütmemek için kısık sesle “Kızılgerdanı. Kulakları tüylerinin altında, anne.” der.\n6–12 sn. Beyza kısa bir tebessümle Ecmel’e bakar. Gökhan fısıldar. “Biraz daha dinleyelim mi?” Üçü kısa bir an sessizce bekler. Yalnızca aynı daldaki kızılgerdanın kısa ötüşü ve yumuşak yaprak sesi.\n12–17 sn. Ecmel yanağını hafifçe kaldırıp gözleri kısılarak fısıldar. “Yine söyledi!” Beyza ve Gökhan onun bu tepkisine gülümser. Kuş dalda kalırken yumuşak kapanış."
+    }
+  ]
+}

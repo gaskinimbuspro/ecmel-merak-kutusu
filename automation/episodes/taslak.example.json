@@ -1,0 +1,14 @@
+{
+  "title": "Bölümün soru biçimindeki başlığı",
+  "description": "Bölümün kısa açıklaması",
+  "sources": ["https://kaynak-adresi.example"],
+  "references": {
+    "kiz": "~/Downloads/kiz.png",
+    "baba": "~/Downloads/baba.png"
+  },
+  "scenes": [
+    {"seconds": 20, "prompt": "@kiz ve @baba ile açılış. Karakterlerin görünüşünü ve tam Türkçe repliklerini yaz."},
+    {"seconds": 25, "prompt": "@kiz ve @baba ile doğrulanmış bilimsel açıklama ve görsel gösterim."},
+    {"seconds": 15, "prompt": "@kiz ve @baba ile kısa kapanış ve bir gözlem sorusu."}
+  ]
+}

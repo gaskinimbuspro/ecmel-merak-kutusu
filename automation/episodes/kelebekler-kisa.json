@@ -1,0 +1,26 @@
+{
+  "title": "Kelebekler nasıl uçar?",
+  "description": "Bahçede bir kelebeğin dört kanadını sayıyoruz. Sonra kanatlarının onu nasıl havada tuttuğuna ve kalkarken ileri gitmesine nasıl yardım ettiğine bakıyoruz.",
+  "sources": [
+    "https://www.floridamuseum.ufl.edu/wp-content/uploads/sites/16/2017/02/Butterfly-Educators-Guide.pdf",
+    "https://www.lunduniversity.lu.se/article/butterfly-wing-clap-explains-mystery-flight"
+  ],
+  "references": {
+    "kiz": "~/Downloads/magichour_ai_image_editor-2026-11-14-608x608-cmwgbvmwy09f6m901ygevj3b2.png",
+    "baba": "~/Downloads/magichour_ai_image_editor-2026-11-14-608x608-cmwgc04850dnonu01zjpy4jhr.png"
+  },
+  "scenes": [
+    {
+      "seconds": 25,
+      "file": "~/Downloads/magichour_text_to_video-2026-11-14-720x1280-cmwgcf4w80chklu0147vckna8.mp4"
+    },
+    {
+      "seconds": 15,
+      "prompt": "Sıcak bir 2D anime aile bilim dizisi. Aynı güneşli bahçe. @kiz iki topuzlu, sarı sweatshirt ve yaprak rozetli kız. @baba kırlaşmış şakaklı, lacivert sweatshirt ve pusula rozetli baba. İkisi için baba portresindeki çizgili anime stili. Replikleri doğal Türkiye Türkçesiyle aynen seslendir. Yalnız konuşan kişinin ağzını repliğe göre hareket ettir. Hafif bahçe sesi kullan. Fon müziği ve ekran yazısı olmasın.\n0–5 sn. Bir mavi kelebek sarı papatyaya konar. Kız: \"Baba, kelebek nasıl havada kalıyor?\"\n5–15 sn. Baba yanıt verirken kelebek yandan görünür ve kalkışta kanatlarını çırpar. Her yanında bir ön ve bir arka kanat var. Baba: \"Kanatlarını aşağı çırpınca havayı aşağı iter. Hava da kanatları yukarı iter. Böylece kelebek havada kalır.\""
+    },
+    {
+      "seconds": 20,
+      "prompt": "Sıcak bir 2D anime aile bilim dizisi. Aynı güneşli bahçe. @kiz iki topuzlu, sarı sweatshirt ve yaprak rozetli kız. @baba kırlaşmış şakaklı, lacivert sweatshirt ve pusula rozetli baba. İkisi için baba portresindeki çizgili anime stili. Replikleri doğal Türkiye Türkçesiyle aynen seslendir. Yalnız konuşan kişinin ağzını repliğe göre hareket ettir. Hafif bahçe sesi kullan. Fon müziği ve ekran yazısı olmasın.\n0–4 sn. Kız babasına bakar. Kız: \"Peki, ileriye nasıl gidiyor?\"\n4–15 sn. Baba yanıt verir. Araya turuncu benekli Argynnis paphia türünü yandan gösteren bir kalkış görüntüsü koy. Kanatları üstte birbirine yaklaşırken hafifçe bükülür. Baba: \"Bilim insanları bir türde şunu görmüş. Kalkarken kanatlar yukarıda birbirine yaklaşınca hava geriye çıkmış. Kelebek de ileri gitmiş.\"\n15–20 sn. Kız kelebeği izler. Kız: \"Bir daha görürsem, kalkışına bakacağım!\""
+    }
+  ]
+}

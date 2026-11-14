@@ -1,0 +1,182 @@
+{
+  "name": "Ecmel · 02 YouTube’a yükle",
+  "active": false,
+  "nodes": [
+    {
+      "id": "0ce0b563-b510-5e36-9b26-925f2ca84add",
+      "name": "Ecmel’in Merak Kutusu · YouTube’a yükle",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "formTitle": "Ecmel’in Merak Kutusu · YouTube’a yükle",
+        "formDescription": "Bölümün MP4 dosyasını izle. Başlığı, açıklamayı ve görünürlüğü kontrol et. Bu formu göndermek, seçtiğin ayarlarla YouTube yüklemesini başlatır. Kitle ayarı Çocuklara özel.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Bölüm kodu",
+              "fieldType": "text",
+              "requiredField": true,
+              "placeholder": "kelebekler"
+            },
+            {
+              "fieldLabel": "YouTube başlığı",
+              "fieldType": "text",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "YouTube açıklaması",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Görünürlük",
+              "fieldType": "dropdown",
+              "requiredField": true,
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "private"
+                  },
+                  {
+                    "option": "unlisted"
+                  },
+                  {
+                    "option": "public"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "responseMode": "onReceived",
+        "options": {
+          "path": "ecmel-youtube",
+          "buttonLabel": "YouTube’a yükle",
+          "appendAttribution": false
+        }
+      },
+      "webhookId": "67a980f7-d0a2-598f-b8d8-905ddc8c89f6"
+    },
+    {
+      "id": "d47a2b53-30c1-5ca9-8894-50cfc5e75fae",
+      "name": "Yükleme dosyasını doğrula",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        240,
+        0
+      ],
+      "parameters": {
+        "command": "={{ \"python3 ./pipeline.py publish --form \" + JSON.stringify({episode:$json[\"Bölüm kodu\"], title:$json[\"YouTube başlığı\"], description:$json[\"YouTube açıklaması\"], visibility:$json[\"Görünürlük\"]}).base64Encode() }}",
+        "executeOnce": true
+      }
+    },
+    {
+      "id": "cff90655-4867-5339-9b2f-433611b64449",
+      "name": "Final MP4 dosyasını al",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        480,
+        0
+      ],
+      "parameters": {
+        "fileSelector": "={{ JSON.parse($json.stdout).file }}",
+        "options": {}
+      }
+    },
+    {
+      "id": "134b7b61-e783-5745-8311-25d1bfcbc4e6",
+      "name": "YouTube Shorts yükle",
+      "type": "n8n-nodes-base.youTube",
+      "typeVersion": 1,
+      "position": [
+        720,
+        0
+      ],
+      "parameters": {
+        "resource": "video",
+        "operation": "upload",
+        "regionCode": "TR",
+        "categoryId": "27",
+        "binaryProperty": "data",
+        "title": "={{ JSON.parse($(\"Yükleme dosyasını doğrula\").first().json.stdout).title }}",
+        "options": {
+          "description": "={{ JSON.parse($(\"Yükleme dosyasını doğrula\").first().json.stdout).description }}",
+          "privacyStatus": "={{ JSON.parse($(\"Yükleme dosyasını doğrula\").first().json.stdout).visibility }}",
+          "selfDeclaredMadeForKids": true,
+          "defaultLanguage": "tr",
+          "notifySubscribers": false
+        }
+      }
+    },
+    {
+      "id": "00b0f375-3836-5554-b7d8-c6eb74b22d85",
+      "name": "Video bağlantısını kaydet",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        960,
+        0
+      ],
+      "parameters": {
+        "command": "={{ \"python3 ./pipeline.py record --form \" + JSON.stringify({episode:JSON.parse($(\"Yükleme dosyasını doğrula\").first().json.stdout).episode, video_id:$json.uploadId}).base64Encode() }}",
+        "executeOnce": true
+      }
+    }
+  ],
+  "connections": {
+    "Ecmel’in Merak Kutusu · YouTube’a yükle": {
+      "main": [
+        [
+          {
+            "node": "Yükleme dosyasını doğrula",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Yükleme dosyasını doğrula": {
+      "main": [
+        [
+          {
+            "node": "Final MP4 dosyasını al",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Final MP4 dosyasını al": {
+      "main": [
+        [
+          {
+            "node": "YouTube Shorts yükle",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube Shorts yükle": {
+      "main": [
+        [
+          {
+            "node": "Video bağlantısını kaydet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "executionTimeout": 3600
+  }
+}

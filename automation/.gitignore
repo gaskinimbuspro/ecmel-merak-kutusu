@@ -1,0 +1,4 @@
+runs/
+n8n-data/
+*.local.json
+__pycache__/
